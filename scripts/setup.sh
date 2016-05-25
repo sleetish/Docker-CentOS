@@ -1,3 +1,8 @@
+#yum install -y git
+#cd ~/
+#git clone https://github.com/ChrisCompton/Docker-CentOS.git
+#cd Docker-CentOS
+
 #umask 077 && mkdir -p ~/.ssh
 #cat ssh.pub >> ~/.ssh/authorized_keys
 #yum install -y perl
