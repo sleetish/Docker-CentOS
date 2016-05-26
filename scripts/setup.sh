@@ -14,4 +14,5 @@ service docker start
 
 docker build --rm -t c7-base ../centos
 docker build --rm -t c7-nginx ../nginx
-docker run -ti --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 --name test c7-nginx
+docker run -d -p 80:80 --name test c7-nginx
+# docker run -ti --privileged=true -v /sys/fs/cgroup:/sys/fs/cgroup:ro -p 80:80 --name test c7-nginx
